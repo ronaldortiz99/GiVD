@@ -305,18 +305,73 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 ## Visualizaciones de los cambios de Raytracer y Shadings
 
 ### Depth Shading
+
+<img src="images/D.png" width="400">
+
 ### Phong Shading
+
+<img src="images/P.png" width="400">
+
 ### Blinn Phong Shading
+
+<img src="images/BP.png" width="400">
+
 ### Toon Shading
+
+<img src="images/T.png" width="400">
+
 ### Color Shadow
+
+<img src="images/CS.png" width="400">
+
 ### Normal Shadow
+
+<img src="images/NS.png" width="400">
+
 ### Depth Shadow
+
+<img src="images/DS.png" width="400">
+
 ### Phong Shadow
+
+<img src="images/PS.png" width="400">
+
 ### Blinn Phong Shadow
+
+<img src="images/BPS.png" width="400">
+
 ### Toon Shadow
+
+<img src="images/TS.png" width="400">
+
 ### Color Shadow + Reflections
+
+<img src="images/CSR.png" width="400">
+
 ### Normal Shadow + Reflections
+
+<img src="images/NSR.png" width="400">
+
 ### Depth Shadow + Reflections
+
+<img src="images/DSR.png" width="400">
+
 ### Phong Shadow + Reflections
+
+<img src="images/PSR.png" width="400">
+
 ### Blinn Phong Shadow + Reflections
+
+<img src="images/BPSR.png" width="400">
+
 ### Toon Shadow + Reflections
+
+<img src="images/TSR.png" width="400">
+
+
+
+
+
+
+
+
