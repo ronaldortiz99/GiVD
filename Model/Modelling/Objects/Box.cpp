@@ -36,8 +36,10 @@ bool Box::hit(Ray &raig, float tmin, float tmax, HitInfo& info) const {
     float tzenter = std::min(tzmin,tzmax);
     float tzexit = std::max(tzmin,tzmax);
 
-    float tenter = std::max({txenter,tyenter, tzenter});
-    float texit = std::min({txexit, tyexit, tzexit});
+    float tenter = std::max(txenter,tyenter);
+    tenter = std::max(tenter,tzenter);;
+    float texit = std::min(txexit, tyexit);
+    texit = std::min(texit, tzexit);
 
 
 
@@ -52,22 +54,22 @@ bool Box::hit(Ray &raig, float tmin, float tmax, HitInfo& info) const {
 
         info.normal = vec3(0,0,0);
 
-        if (info.p.x - max.x < FLT_EPSILON){
+        if (abs(info.p.x - max.x) < 0.001){
             info.normal.x = 1.0;
         }
-        else if(min.x - info.p.x < FLT_EPSILON){
+        else if(abs(min.x - info.p.x) < 0.001){
             info.normal.x = -1.0;
         }
-        else if (info.p.y - max.y < FLT_EPSILON){
+        else if (abs(info.p.y - max.y) < 0.001){
             info.normal.y = 1.0;
         }
-        else if(min.y - info.p.y < FLT_EPSILON){
+        else if(abs(min.y - info.p.y) < 0.001){
             info.normal.y = -1.0;
         }
-        else if (info.p.z - max.z < FLT_EPSILON){
+        else if (abs(info.p.z - max.z) < 0.001){
             info.normal.z = 1.0;
         }
-        else if(min.z - info.p.z < FLT_EPSILON){
+        else if(abs(min.z - info.p.z) < 0.001){
             info.normal.z = -1.0;
         }
         info.mat_ptr = material.get();

@@ -9,24 +9,6 @@ float ShadingStrategy::computeShadow(shared_ptr<Light> light, vec3 point, shared
 
         //Mientras interseccione con un Material Transparent se queda en el bucle
         while(MaterialFactory::getInstance().getIndexType(info.mat_ptr) == MaterialFactory::TRANSPARENT){
-            /*//Paso Material a Transparente para obtener dmax
-            Transparent * t = static_cast<Transparent*>(info.mat_ptr);
-            //Como no tengo  dmax uso este valor de prueba
-            float fah =  1/t->dmax;
-            //Punto inicial de intersección con el objeto transparente
-            vec3 iniP =  info.p;
-            //Doy por hecho que la luz estará fuera del objeto transparente y que no hay ningun objeto  dentro del mismo
-            scene->hit(raig, info.t + 0.0001, light->distanceToLight(info.p), info);
-            //Calculo la distancia entre punto inicial y final de intersección con el objeto
-            float dist = distance(iniP,info.p);
-            //Compruebo que shadow factor no sea igual a 0
-            if(shadow_fx < FLT_EPSILON)
-                return 0.0;
-            //Aumento shadow factor
-            shadow_fx -= fah * dist;
-            // Si no hay ninguna otra  intersección devuelvo shadow factor
-            if(!scene->hit(raig, info.t + 0.0001, light->distanceToLight(info.p), info))
-                return shadow_fx;*/
             shadow_fx =  1 - getShadowFxTransp(light,raig,scene,info,0);
             if(shadow_fx < FLT_EPSILON)
                 return 0.0;

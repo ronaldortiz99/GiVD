@@ -91,6 +91,9 @@ vec3 RayTracer::RayPixel(Ray &ray) {
         if (shade!=nullptr){
             color = shade->shading(scene,info,ray.getOrigin(),setup->getGlobalLight(), setup->getLights());
             if(setup->getReflections()){
+                if(MaterialFactory::getInstance().getIndexType(info.mat_ptr) == MaterialFactory::TRANSPARENT){
+                    color *= (1.0f - info.mat_ptr->Kt);
+                }
                 if(getDepth() <= setup->getMAXDEPTH()){
                     addDepth();
                     if(info.mat_ptr->scatter(ray, info, colorsec, rayout)){
