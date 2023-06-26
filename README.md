@@ -405,7 +405,11 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 <img src="images/E2I1.png" width="400">
 
 
+## Visualizaciones de Escenas Reales
 
+### Europa
+* Para esta visualización voy a usar el Real Scene "dadesEuropaTextured.json" y el setup "setupDataEuropa.json".
+* <img src="images/DR1.png" width="400">
 
 
 
