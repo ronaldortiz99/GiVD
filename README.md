@@ -257,11 +257,12 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 
    * Per totes les imatges, incluiu aqui la imatge obtinguda i els fitxers de dades i de configuració que heu fet servir
 
- # Modificaciones para Reevaluación
 
- ## A Nivel de Código
- * Ya se puede cambiar el numSamples por la interfaz
- * Añadí flags de Reflections y Shadows en el método de read de Setup, ya se pueden cargar setups con estos flags activados
+# Modificaciones para Reevaluación
+
+## A Nivel de Código
+* Ya se puede cambiar el numSamples por la interfaz
+* Añadí flags de Reflections y Shadows en el método de read de Setup, ya se pueden cargar setups con estos flags activados
 
 ## Intersecciones
 * Cambié como se añade el FittedPlane a la escena al cargar una Data Scene, antes se añadía como otro objeto, ahora se añade como basePlane y se gestiona sus intersecciones de forma diferente.
