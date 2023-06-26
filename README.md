@@ -277,26 +277,26 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 *Cambié como se calculan estos shading, ya que se hacían de forma incorrecta, aplicando la atenuación solo al componete difusa y especular y teniendo en cuenta el componete ambiente y la iluminación global.
 
 ### Cel / Toon Shading
-*Cambié su implementación, ya no usa una atenuación  y degrada el componente difuso para obtener una escala de colores, antes usaba una escala de colores predefinida.
+* Cambié su implementación, ya no usa una atenuación  y degrada el componente difuso para obtener una escala de colores, antes usaba una escala de colores predefinida.
 
 ## Shadows
-*En los shadows de Color, Depth y Normal devuelve el componente ambiente si está en la sombra.
-*Cambié como se aplica el factor sombra en BlinnPhongShadow, PhongShadow y CellShadow.
+* En los shadows de Color, Depth y Normal devuelve el componente ambiente si está en la sombra.
+* Cambié como se aplica el factor sombra en BlinnPhongShadow, PhongShadow y CellShadow.
 
 ### Shadows en objetos Transparentes
-*Cambié como se calcula el factor sombra para objetos transparentes en ShadingStrategy.
-*Ahora se tiene en cuenta la propiedad dmax del material que reduce este factor sombra según la distancia que se atraviesa del objeto
-*Cree un metodo que de forma recursiva calcula la atenuación del factor sombra de un objeto transparente, teniendo en cuenta que puede tener objetos transparentes en su interior
+* Cambié como se calcula el factor sombra para objetos transparentes en ShadingStrategy.
+* Ahora se tiene en cuenta la propiedad dmax del material que reduce este factor sombra según la distancia que se atraviesa del objeto
+* Cree un metodo que de forma recursiva calcula la atenuación del factor sombra de un objeto transparente, teniendo en cuenta que puede tener objetos transparentes en su interior
 
 ### RayTracer
-*Ahora se hace clamp de los colores antes de la gamma corrección
-*Rehice el método RayPixel, ahora si el background está desactivado el fondo es negro, no como antes que la imagen entera era negra. Ahora si se tienen en cuenta el flag de Reflection para calcular reflexiones y transparencias. Además se tiene en cuenta si el material es transparente para modificar el color.
+* Ahora se hace clamp de los colores antes de la gamma corrección
+* Rehice el método RayPixel, ahora si el background está desactivado el fondo es negro, no como antes que la imagen entera era negra. Ahora si se tienen en cuenta el flag de Reflection para calcular reflexiones y transparencias. Además se tiene en cuenta si el material es transparente para modificar el color.
 
 ## Escalados y Traslaciones
-*Ahora la box solo escala en la Y's
-*Simplifique escalado de la esfera
-*Añadí escalado a los triangulos.
+* Ahora la box solo escala en la Y's
+* Simplifique escalado de la esfera
+* Añadí escalado a los triangulos.
 
 ## Material Textura y Nuevas Escenas
-*En la práctica ya existe una escena que cree yo en la cual se nos muestra un mapa de la facultat de Matematicas e Informatica de la UB, con esferas que representan las aulas de teoría y boxes para los laboratorios. Este dataset se llama DataUB.json y usa la imagen mapUB.png. Para esta nueva entrega he añadido un setupUB.json para ver mejor este dataset.
+* En la práctica ya existe una escena que cree yo en la cual se nos muestra un mapa de la facultat de Matematicas e Informatica de la UB, con esferas que representan las aulas de teoría y boxes para los laboratorios. Este dataset se llama DataUB.json y usa la imagen mapUB.png. Para esta nueva entrega he añadido un setupUB.json para ver mejor este dataset.
  
