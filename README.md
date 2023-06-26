@@ -288,7 +288,7 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 * Ahora se tiene en cuenta la propiedad dmax del material que reduce este factor sombra según la distancia que se atraviesa del objeto
 * Cree un metodo que de forma recursiva calcula la atenuación del factor sombra de un objeto transparente, teniendo en cuenta que puede tener objetos transparentes en su interior
 
-### RayTracer
+## RayTracer
 * Ahora se hace clamp de los colores antes de la gamma corrección
 * Rehice el método RayPixel, ahora si el background está desactivado el fondo es negro, no como antes que la imagen entera era negra. Ahora si se tienen en cuenta el flag de Reflection para calcular reflexiones y transparencias. Además se tiene en cuenta si el material es transparente para modificar el color.
 
