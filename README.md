@@ -303,6 +303,7 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 # Visualización de las modificaciones
 
 ## Visualizaciones de los cambios de Raytracer y Shadings
+* Para las siguientes visualizaciones uso el Virtual Scene "spheresMetalTransp.json" y el setup "setupRenderOneSphere.json". En esta escena hay 4 esfera, una esfera grande que hace de base que es Lambertian,y tres esferas pequeñas que de izquierda a derecha son de los material Transparent, Lambertian y Metal. Para estas visualizaciones uso NumSamples de 10 y MaxDepth de 4.
 
 ### Depth Shading
 
@@ -319,6 +320,9 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 ### Toon Shading
 
 <img src="images/T.png" width="400">
+
+### Shadows
+* Activo el Flag de Shadow
 
 ### Color Shadow
 
@@ -343,6 +347,9 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 ### Toon Shadow
 
 <img src="images/TS.png" width="400">
+
+### Reflections
+* Activo el Flag de Reflections
 
 ### Color Shadow + Reflections
 
