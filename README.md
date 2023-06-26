@@ -303,7 +303,7 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 # Visualización de las modificaciones
 
 ## Visualizaciones de los cambios de Raytracer y Shadings
-* Para las siguientes visualizaciones uso el Virtual Scene "spheresMetalTransp.json" y el setup "setupRenderOneSphere.json". En esta escena hay 4 esfera, una esfera grande que hace de base que es Lambertian,y tres esferas pequeñas que de izquierda a derecha son de los material Transparent, Lambertian y Metal. Para estas visualizaciones uso NumSamples de 10 y MaxDepth de 4.
+* Para las siguientes visualizaciones uso el Virtual Scene **spheresMetalTransp.json** y el setup **setupRenderOneSphere.json**. En esta escena hay 4 esfera, una esfera grande que hace de base que es Lambertian,y tres esferas pequeñas que de izquierda a derecha son de los material Transparent, Lambertian y Metal. Para estas visualizaciones uso NumSamples de 10 y MaxDepth de 4.
 
 ### Depth Shading
 
@@ -374,6 +374,59 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 ### Toon Shadow + Reflections
 
 <img src="images/TSR.png" width="400">
+
+## Visualización de Sombras con Objetos Transparente
+* Para mostrar que funciona el método del calculo de la atenuación de las sombras con objetos transparentes y que se tiene en cuenta sus objetos internos voy a usar diferentes valor de dmax.
+* En las visualizaciones voy a usar el Virtual Scene **fourSpheresBubbleBaseMetal.json** y el setup **setupFourSpheresBubble.json**. Esta scena tiene 5 esferas, la esfera grande que hace base que es Metal, dos esferas medianas transparentes una dentro de la otra teniendo la externa un nut de 1 y la interna un nut de 1,5, y por último 2 esferas pequeñas una de metal y otra lambertian.
+* Entre las visualizaciones iré cambiando la dmax de las esferas transparentes, refieriendome a la dmax de la esfera interna como **DI** y a la dmax de la esfera externa como **DE**.
+
+### DI = 0 y DE = 0
+
+<img src="images/E0I0.png" width="400">
+
+### DI = 1 y DE = 1
+
+<img src="images/E1I1.png" width="400">
+
+### DI = 2 y DE = 2
+
+<img src="images/E2I2.png" width="400">
+
+### DI = 10 y DE = 10
+
+<img src="images/E10I10.png" width="400">
+
+### DI = 5 y DE = 1
+
+<img src="images/E1I5.png" width="400">
+
+### DI = 1 y DE = 2
+
+<img src="images/E2I1.png" width="400">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
