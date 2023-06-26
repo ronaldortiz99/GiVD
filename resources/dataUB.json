@@ -1,0 +1,79 @@
+{
+"scene": "Data10",
+"typeScene": "REALDATA",
+"base" : {
+   "type": "FITTEDPLANE",
+   "normal": [0.0, 1.0, 0.0],
+   "point": [0.0, 0.5, 0.0],
+   "pmin": [-5.0, -5.0],
+   "pmax": [5.0, 5.0],
+   "material": {
+       "type": "MaterialTextura",
+       "ka": [0.2, 0.2, 0.2],
+       "kd": [0.7,0.6,0.5],
+       "ks": [0.7, 0.7, 0.7],
+       "shininess": 10.0,
+       "kt": [0.0, 0.0, 0.0],
+       "nut": 0.0,
+       "textureFile": "://resources/mapUB.png"
+    }
+},
+"Real": {
+  "minPoint": [2.16162, 41.38592],
+  "maxPoint": [2.16497,  41.38776]
+},
+"Virtual": {
+  "minPoint": [-5,  0.5, -5],
+  "maxPoint": [ 5,  0.5,  5]
+},
+"attributes": [
+{
+"name": "aulas",
+"gyzmo": "sphere",
+"minValue": 0,
+"maxValue": 10,
+"colorMap": "COLOR_MAP_TYPE_PLASMA",
+"material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.8, 0.8, 0.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    },
+"data": [
+ [ 2.16357, 41.38720, 1], 
+ [ 2.16386, 41.38742, 1], 
+ [ 2.16398, 41.38737, 1], 
+ [ 2.16428, 41.38715, 1], 
+ [ 2.16431, 41.38702, 1], 
+ [ 2.16444, 41.38692, 1]
+]
+},
+{
+"name": "laboratorios",
+"gyzmo": "box",
+"minValue": 0,
+"maxValue": 1,
+"colorMap": "COLOR_MAP_TYPE_PLASMA",
+"material": {
+    "type": "lambertian",
+    "ka": [0.2, 0.2, 0.2],
+    "kd": [0.8, 0.8, 0.0],
+    "ks": [1.0, 1.0, 1.0],
+    "shininess": 10.0,
+    "kt": [0.0, 0.0, 0.0],
+    "nut": 0.0
+    },
+"data": [ 
+ [ 2.16433, 41.38695, 1], 
+ [ 2.16409, 41.38728, 1], 
+ [ 2.16373, 41.38731, 1], 
+ [ 2.16395, 41.38693, 1], 
+ [ 2.16379, 41.38728, 1], 
+ [ 2.16363, 41.38713, 1] 
+]
+}
+]
+}
