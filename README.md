@@ -260,21 +260,21 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
  # Modificaciones para Reevaluación
 
  ## A Nivel de Código
- *Ya se puede cambiar el numSamples por la interfaz
- *Añadí flags de Reflections y Shadows en el método de read de Setup, ya se pueden cargar setups con estos flags activados
+ * Ya se puede cambiar el numSamples por la interfaz
+ * Añadí flags de Reflections y Shadows en el método de read de Setup, ya se pueden cargar setups con estos flags activados
 
 ## Intersecciones
-*Cambié como se añade el FittedPlane a la escena al cargar una Data Scene, antes se añadía como otro objeto, ahora se añade como basePlane y se gestiona sus intersecciones de forma diferente.
-*Cambié la forma de calcular la normal del BOX ahora se comprueba si es un punto máximo o mínimo con respecto a un epsilon.
+* Cambié como se añade el FittedPlane a la escena al cargar una Data Scene, antes se añadía como otro objeto, ahora se añade como basePlane y se gestiona sus intersecciones de forma diferente.
+* Cambié la forma de calcular la normal del BOX ahora se comprueba si es un punto máximo o mínimo con respecto a un epsilon.
 
 ## Shading
-*Cambié como se calcula la atenuación de la luz en PointLight que se hacía de forma incorrecta
+* Cambié como se calcula la atenuación de la luz en PointLight que se hacía de forma incorrecta
 
 ### Depth
-*Cambié el depth shading, eliminando calculos innecesarios que se hacían en este shading como normalizar puntos.
+* Cambié el depth shading, eliminando calculos innecesarios que se hacían en este shading como normalizar puntos.
 
 ### BlinnPhong y Phong
-*Cambié como se calculan estos shading, ya que se hacían de forma incorrecta, aplicando la atenuación solo al componete difusa y especular y teniendo en cuenta el componete ambiente y la iluminación global.
+* Cambié como se calculan estos shading, ya que se hacían de forma incorrecta, aplicando la atenuación solo al componete difusa y especular y teniendo en cuenta el componete ambiente y la iluminación global.
 
 ### Cel / Toon Shading
 * Cambié su implementación, ya no usa una atenuación  y degrada el componente difuso para obtener una escala de colores, antes usaba una escala de colores predefinida.
