@@ -416,31 +416,3 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 * Esta es la escena que he creado que es **dataUB.json** y uso el setup **setupUB.json**.
 * El lookFrom esta en (2,10,2) y el lookAt en (2,0,2).
 <img src="images/DR2.png" width="400">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
