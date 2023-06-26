@@ -300,3 +300,23 @@ En aquest fitxer cal que feu l'informe de la pràctica 1.
 ## Material Textura y Nuevas Escenas
 * En la práctica ya existe una escena que cree yo en la cual se nos muestra un mapa de la facultat de Matematicas e Informatica de la UB, con esferas que representan las aulas de teoría y boxes para los laboratorios. Este dataset se llama DataUB.json y usa la imagen mapUB.png. Para esta nueva entrega he añadido un setupUB.json para ver mejor este dataset.
  
+# Visualización de las modificaciones
+
+## Visualizaciones de los cambios de Raytracer y Shadings
+
+### Depth Shading
+### Phong Shading
+### Blinn Phong Shading
+### Toon Shading
+### Color Shadow
+### Normal Shadow
+### Depth Shadow
+### Phong Shadow
+### Blinn Phong Shadow
+### Toon Shadow
+### Color Shadow + Reflections
+### Normal Shadow + Reflections
+### Depth Shadow + Reflections
+### Phong Shadow + Reflections
+### Blinn Phong Shadow + Reflections
+### Toon Shadow + Reflections
